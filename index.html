@@ -18,7 +18,38 @@
 
   <body>
     <!-- Start of navbar -->
-    <!-- End of navbar -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class=" navbar-brand" href="index.html">Latitude</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-controls="navbarDropDown" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="data.html">Data</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="visualisations/temp.html">Max temperature</a></li>
+                  <li><a class="dropdown-item" href="visualisations/humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="visualisations/cloudiness.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="visualisations/windspeed.html">Wind Speed</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+    <!-- End of navbar for landing page-->
 
     <!-- Start of container -->
           <!-- Start of Visualisations imageNav Area -->
