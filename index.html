@@ -4,32 +4,30 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Bootstrap Visualisation Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous>
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-
+    <title>Bootstrap Visualisation Dashboard</title>
   </head>
 
   <body>
     <!-- Start of navbar -->
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class=" navbar-brand" href="index.html">Latitude</a>
+        <a class="navbar-brand" style="background-color:rgb(255, 255, 255);" href="index.html">Latitude</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-controls="navbarDropDown" 
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> 
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="comparison.html">Comparison</a>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" aria-current="page" href="comparison.html">Comparison</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="data.html">Data</a>
@@ -53,7 +51,41 @@
     <!-- End of navbar for landing page-->
 
     <!-- Start of container -->
-          <!-- Start of Visualisations imageNav Area -->
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-lg-7 col-md-12">
+          <div class="box" style="padding-bottom: 20px;">
+            <h2 class = "title"> Summary: Latitude vs. X </h2>
+            <hr>
+            <img src="assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temp Graph">
+            <p>The purpose of this project was to analyse how weather changes as you get closer to the equator. To accomplish this analysis, 
+            we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+            
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: 
+            temperature, cloudiness, wind speed and humidity. This site provides the source data and visualisations created as part of the analysis, 
+            as well as the explanations and descriptions of any trends and correlations witnessed.</p>
+          </div>
+        </div>
+
+        <!-- Start of Visualisations imageNav Area -->
+        <div class = "col-lg-5 col-md-12">
+          <div class="box">
+            <h2 class="title">Visualisations </h2>
+            <hr>
+            <div class = "container">
+              <!-- justify-content property distributes the space between items evenly -->
+              <div class="images justify-content-evenly"> 
+                <a href="temperature.html"><img src="assets/images/Fig1.png"  width="200px" height="200px" alt="Max Temp"></a>
+                <a href="cloudiness.html"><img src="assets/images/Fig2.png" width="200px" height="200px" alt="Humidity"></a>
+                <a href="windspeed.html"><img src="assets/images/Fig3.png" width="200px" height="200px" alt="Cloudiness"></a>
+                <a href="humidity.html"><img src="assets/images/Fig4.png" width ="200px" height="200px"alt="Wind Speed"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          
           <!-- End of the Visualisations imageNav Area -->
     <!-- End of container -->
 
@@ -61,7 +93,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous></script>
   </body>
 
 </html>
